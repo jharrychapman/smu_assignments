@@ -1,3 +1,6 @@
+-- Harry Chapman SQL Homework
+-- This file examines employee data
+
 -- Query 1
 SELECT
 	e.emp_no,
