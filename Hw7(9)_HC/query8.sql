@@ -1,0 +1,9 @@
+SELECT
+	last_name,
+	COUNT(emp_no) AS LASTNAMECOUNT
+FROM
+	employees
+GROUP BY
+	last_name
+ORDER BY
+	LASTNAMECOUNT DESC;
