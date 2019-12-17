@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dynamic Analysis of Socioeconomic Factors</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/d3Style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <h1>Dynamic Analysis of Socieconomic Factors</h1>
+                <strong>Harry Chapman</strong>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div id="scatter">
+                    <!-- Chart is appended here. -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-xs-12 col-md-9">
+                <div class="article">
+                    <h2>Socioeconomic Correlations</h2>
+                    <p>Examining state-level data, the upward trend of poverty (%) and lack of healthcare (%) signifies that there is a higher prevalence of those without healthcare as
+                        the percentage of those in poverty increases.
+                    </p>
+            
+                    <p>Comparing age with lack of healthcare, we can see there is a weak negative correlation between age and lack of healthcare, with increasing age correlating
+                        with lower levels of lack of healthcare. However, this weak correlation is drawn largely by the outliers of TX, UT, ME, VT, and MA.
+            
+                    <p>
+                        The correlation between median household income and lack of healthcare is more strongly negative and is fundamentally the inverse of the first correlation (Poverty x Lack of Healthcare)
+                        so the results are expected: higher median household incomes correlate with higher levels of healthcare coverage (or lower levels of lack of healthcare coverage).
+                    </p>
+
+                    <p>
+                        Moreover, both smoking (%) and obesity (%) are positively correlated with higher levels of poverty while they are basically uncorrelated with trends in age
+                        and are centered around 37-38 years. Is this due to smokers and the obese dying sooner? More analysis is needed to support this hypothesis.
+                    </p>
+
+                    <p>
+                        Finally, both smoking (%) and obesity (%) are negatively correlated with median household income. That is, higher levels of wealth see lower prevalance in the proportions
+                        of smokers and the obese. Could this be due to different access to healthcare, nutrition, and education across the income spectrum?
+                    </p>
+            
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <p>The Coding Boot Camp&copy;2016</p>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
